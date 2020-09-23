@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ManagerModel2StoreContainer" CdmEntityContainer="ManagerEntities6">
+    <EntitySetMapping Name="AgentDetails">
+      <EntityTypeMapping TypeName="ManagerModel2.AgentDetail">
+        <MappingFragment StoreEntitySet="AgentDetails">
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="AgentName" ColumnName="AgentName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AgentComission" ColumnName="AgentComission" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="InvoiceTo" ColumnName="InvoiceTo" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="AgentDescription" ColumnName="AgentDescription" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,126 @@
+﻿@model Manager.Models.BankDetail
+
+@{
+    ViewBag.Title = "BankDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <style>
+        .pull-right {
+            float: right
+        }
+    </style>
+<div class="container-fluid" style="min-height: 1126px;">
+
+    <section class="content clearfix">
+        <div class="row">
+
+
+            <div class="col-xs-12">
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        @*<li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">General Bank Details</a></li>
+                        <li class=""><a href="https://condat.com.au/condat/253/settings/college-bank-details">College Bank Details </a></li>*@
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_1">
+
+
+                            <form method="POST" action=@Url.Action("SaveAgent","Agent") accept-charset="UTF-8" class="form-horizontal form-left">
+                                <input name="_token" type="hidden" value="iDZ2EruPUjDYXi7cuoExYRsQnnJaQHfgLXae9KDG">
+                                <div class="">
+                                    <p style="font-size: 14px;color:#847070;text-align: justify;">
+                                        <span class=""><i class="fa fa-info-circle"></i></span>
+                                        This is General Bank Details. This will display entered Bank Details in all the invoices. If you have separate Bank Details for College Invoices please click on College Bank Details Tab
+                                    </p>
+                                </div>
+                                <div class="col-sm-12 box-body">
+
+
+
+                                    <div class="form-group ">
+
+                                        <label for="name" class="col-sm-3 control-label">Bank Name *</label>
+                                        <div class="col-sm-9 pull-right">
+
+                                            <input class="form-control" name="BankName" type="text">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="form-group ">
+
+                                        <label for="account_name" class="col-sm-3 control-label">Account Name *</label>
+                                        <div class="col-sm-9 pull-right">
+
+                                            <input class="form-control" name="AccountName" type="text">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="form-group ">
+
+                                        <label for="number" class="col-sm-3 control-label">Account Number *</label>
+                                        <div class="col-sm-9 pull-right">
+
+                                            <input class="form-control" name="AccountNumber" type="text">
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="form-group ">
+
+                                        <label for="bsb" class="col-sm-3 control-label">BSB</label>
+                                        <div class="col-sm-9 pull-right">
+
+                                            <input class="form-control" name="BSB" type="text">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box-footer clearfix">
+
+                                    <input type="submit" class="btn btn-primary pull-right" value="Update" />
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</div>
+<div class="box box-primary box-solid box-tutorial" id="box-tutorial" style="display: none;">
+    <div class="box-header with-border">
+        <i class="fa fa-lightbulb-o"></i> <span class="text-white"><h3 class="box-title">Tutorial!</h3></span>
+
+        <div class="box-tools pull-right">
+
+            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                <i class="fa fa-minus"></i>
+            </button>
+
+
+            <button type="button" class="btn btn-box-tool" onclick="closeTutorial()"><i class="fa fa-times"></i></button>
+
+        </div>
+        <!-- /.box-tools -->
+    </div>
+
